@@ -27,7 +27,7 @@ for (let num: number = 40; num < 51; num++) {
 ### 8. for文と条件式の組み合わせ2
 */
 console.log("10 ~ 25までの数字の中で3の倍数の数字のみを出力してください")
-for (let num: number = 10; num <26; num++) {
+for (let num: number = 10; num < 26; num++) {
     if (num % 3 === 0) {
         console.log(num);
     }

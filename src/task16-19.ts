@@ -11,7 +11,6 @@ for (let num: number = 0; num < 4; num++) {
     console.log(Array(num + 1).join(zero))
 }
 
-
 console.log("")
 console.log("17, 図形の表示")
 console.log("0")

@@ -5,10 +5,10 @@ console.log("`while`ループを使用して、1から100までの数字を順�
 let count: number = 1;
 
 while (count <= 100) {
-  if (count % 6 === 0 && count % 10 === 0) {
-    console.log("条件を満たした最後の数字:", count)
-    break;
-  }
+    if (count % 6 === 0 && count % 10 === 0) {
+        console.log("条件を満たした最後の数字:", count)
+        break;
+    }
 count++;
 }
 
@@ -19,10 +19,10 @@ let sum: number = 0;
 let num: number = 10;
 
 do {
-  if (num % 2 === 0) {
-    sum += num;
-  }
-  num++;
+    if (num % 2 === 0) {
+        sum += num;
+    }
+    num++;
 } while (num <= 50);
 
 console.log("10から50までの偶数の合計は:", sum);
@@ -39,13 +39,13 @@ let num2: number = 5;
 let diff = num1 - num2;
 
 switch (true) {
-  case diff === 0:
-    console.log("0です")
-    break;
-  case diff % 2 === 0:
-    console.log("偶数です")
-    break;
-  default:
-    console.log("奇数です")
-    break;
+    case diff === 0:
+        console.log("0です")
+        break;
+    case diff % 2 === 0:
+        console.log("偶数です")
+        break;
+    default:
+        console.log("奇数です")
+        break;
 }

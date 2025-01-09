@@ -8,7 +8,7 @@ console.log("この図形をfor文を使って出力してください。")
 let zero: string = "0";
 
 for (let num: number = 0; num < 4; num++) {
-    console.log(Array(num + 1).join(zero))
+    console.log(zero.repeat(num))
 }
 
 console.log("")
@@ -21,7 +21,7 @@ console.log("")
 
 for (let num: number = 0; num < 6; num++) {
     if (num % 2 !== 0) {
-        console.log(Array(num + 1).join(zero))
+        console.log(zero.repeat(num))
     }
 }
 
@@ -37,12 +37,12 @@ console.log("")
 
 for (let num: number = 0; num < 6; num++) {
     if (num % 2 !== 0) {
-        console.log(Array(num + 1).join(zero))
+        console.log(zero.repeat(num))
     }
 }
 
 for (let num: number = 3; num >= 0; num--) {
     if (num % 2 !== 0) {
-        console.log(Array(num + 1).join(zero))
+        console.log(zero.repeat(num))
     }
 }

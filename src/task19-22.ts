@@ -24,7 +24,7 @@ console.log(numbers);
 
 console.log("3. 配列 [1, 2, 3, 4, 5] から要素 3 を削除してください")
 numbers = [1, 2, 3, 4, 5];
-numbers.splice(2, 1);
+numbers = numbers.filter(number => number !== 3);
 console.log(numbers);
 
 console.log("4. 配列 [1, 2, 3, 4, 5] を逆順にしてください。")
@@ -37,12 +37,12 @@ console.log(numbers);
 //# 21. 配列の操作（応用）
 console.log("1. 配列 [1, 2, 3, 4, 5] の各要素を2倍にした新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5];
-let doubleNumbers = numbers.map(element => element * 2);
+let doubleNumbers = numbers.map(number  => number  * 2);
 console.log(doubleNumbers);
 
 console.log("2. 配列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] から偶数だけを取り出して新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let evenNumbers = numbers.filter(element => element % 2 === 0);
+let evenNumbers = numbers.filter(number  => number  % 2 === 0);
 console.log(evenNumbers);
 
 
@@ -60,12 +60,12 @@ console.log(mergedNumbers);
 // # 22. 配列の応用操作
 console.log("1. 配列 [1, 2, 3, 4, 5] の各要素を3倍にした新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5];
-let tripleNumbers = numbers.map(element => element * 3);
+let tripleNumbers = numbers.map(number  => number  * 3);
 console.log(tripleNumbers);
 
 console.log("2. 配列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] から奇数だけを取り出して新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let oddNumbers = numbers.filter(element => element % 2 !== 0);
+let oddNumbers = numbers.filter(number  => number  % 2 !== 0);
 console.log(oddNumbers);
 
 console.log("3. 配列 ['red', 'blue', 'green', 'yellow'] の各要素を大文字に変換した新しい配列を作成してください。")

@@ -6,8 +6,8 @@ console.log(numbers);
 console.log("2. 数字の配列 [1, 2, 3, 4, 5] を作成し、配列の最初の要素と最後の要素を表示してください。")
 numbers = [1, 2, 3, 4, 5];
 
-let firstElement = numbers[0];
-let lastElement = numbers[numbers.length - 1];
+const firstElement = numbers[0];
+const lastElement = numbers[numbers.length - 1];
 
 console.log("最初の要素:", firstElement)
 console.log("最後の要素:", lastElement)
@@ -24,8 +24,8 @@ console.log(numbers);
 
 console.log("3. 配列 [1, 2, 3, 4, 5] から要素 3 を削除してください")
 numbers = [1, 2, 3, 4, 5];
-numbers = numbers.filter(number => number !== 3);
-console.log(numbers);
+const filteredNumbers = numbers.filter(number => number !== 3);
+console.log(filteredNumbers);
 
 console.log("4. 配列 [1, 2, 3, 4, 5] を逆順にしてください。")
 numbers = [1, 2, 3, 4, 5];
@@ -37,39 +37,39 @@ console.log(numbers);
 //# 21. 配列の操作（応用）
 console.log("1. 配列 [1, 2, 3, 4, 5] の各要素を2倍にした新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5];
-let doubleNumbers = numbers.map(number  => number  * 2);
+const doubleNumbers = numbers.map(number  => number  * 2);
 console.log(doubleNumbers);
 
 console.log("2. 配列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] から偶数だけを取り出して新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let evenNumbers = numbers.filter(number  => number  % 2 === 0);
+const evenNumbers = numbers.filter(number  => number  % 2 === 0);
 console.log(evenNumbers);
 
 
 console.log("3. 文字列配列 ['apple', 'banana', 'cherry'] の各要素の長さを表示してください。")
-let fruits = ['apple', 'banana', 'cherry'];
-let fruitsLengths = fruits.map(fruit => fruit.length);
+const fruits = ['apple', 'banana', 'cherry'];
+const fruitsLengths = fruits.map(fruit => fruit.length);
 console.log(fruitsLengths);
 
 console.log("4. 配列 [1, 2, 3, 4, 5] と [6, 7, 8, 9, 10] を結合して新しい配列を作成してください。")
-let numbers1 = [1, 2, 3, 4, 5];
-let numbers2 = [6, 7, 8, 9, 10];
-let mergedNumbers = numbers1.concat(numbers2);
+const numbers1 = [1, 2, 3, 4, 5];
+const numbers2 = [6, 7, 8, 9, 10];
+const mergedNumbers = numbers1.concat(numbers2);
 console.log(mergedNumbers);
 
 // # 22. 配列の応用操作
 console.log("1. 配列 [1, 2, 3, 4, 5] の各要素を3倍にした新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5];
-let tripleNumbers = numbers.map(number  => number  * 3);
+const tripleNumbers = numbers.map(number  => number  * 3);
 console.log(tripleNumbers);
 
 console.log("2. 配列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] から奇数だけを取り出して新しい配列を作成してください。")
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let oddNumbers = numbers.filter(number  => number  % 2 !== 0);
+const oddNumbers = numbers.filter(number  => number  % 2 !== 0);
 console.log(oddNumbers);
 
 console.log("3. 配列 ['red', 'blue', 'green', 'yellow'] の各要素を大文字に変換した新しい配列を作成してください。")
-let colors = ['red', 'blue', 'green', 'yellow'];
-let upperCaseColors = colors.map(color => color.toUpperCase());
+const colors = ['red', 'blue', 'green', 'yellow'];
+const upperCaseColors = colors.map(color => color.toUpperCase());
 console.log(upperCaseColors);
 

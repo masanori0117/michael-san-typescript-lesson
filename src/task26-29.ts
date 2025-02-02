@@ -5,7 +5,7 @@ console.log(numbers.includes(30));
 
 console.log("2. 配列 `[1, 3, 5, 7, 9]` から最初に条件「偶数」である要素を探してください（該当する要素がない場合は `undefined` を返します）。")
 numbers = [1, 3, 5, 7, 9];
-console.log(numbers.find((num: number) => num % 2 ===0));
+console.log(numbers.find((num: number) => num % 2 === 0));
 
 console.log("### 27. 配列のフィルタリングと条件チェック")
 console.log("1. 配列 `[12, 24, 35, 47, 55]` から50以上の値だけを取り出して新しい配列を作成してください。")
@@ -26,18 +26,18 @@ console.log(numbers.some((num: number) => num >= 20 && num <= 40));
 console.log("### 28. 配列と文字列操作の組み合わせ")
 console.log("1. 配列 `['hello', 'world', 'typescript']` の各要素を大文字に変換し、要素同士をハイフン  で連結して一つの文字列を作成してください（例：`'HELLO-WORLD-TYPESCRIPT'`）。")
 let words: string[] = ['hello', 'world', 'typescript'];
-let string: string = words.map((word: string) => word.toUpperCase()).join('-')
-console.log(string)
+let text: string = words.map((word: string) => word.toUpperCase()).join('-')
+console.log(text)
 
 console.log("2. 文字列 `'apple, banana, cherry'` をカンマで分割し、配列に変換してください。")
-string = 'apple, banana, cherry';
-words = string.split(', ');
+text = 'apple, banana, cherry';
+words = text.split(/\s*,\s*/);
 console.log(words)
 
 console.log("3. 配列 `['javascript', 'is', 'awesome']` をスペースで結合し、一つの文字列を作成してください。")
 words = ['javascript', 'is', 'awesome'];
-string = words.join(' ');
-console.log(string);
+text = words.join(' ');
+console.log(text);
 
 
 console.log("### 29. 配列のネスト操作")

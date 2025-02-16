@@ -1,0 +1,16 @@
+{
+    "name": "my-typescript-project",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "@types/node": "^22.13.4"
+    }
+}

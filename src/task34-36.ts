@@ -40,13 +40,22 @@ console.log("### 36. 再帰関数")
 console.log("与えられた数値を引数として、1からその数値までの合計を計算する再帰関数を作成してください。")
 console.log("例: sum(5) → 1 + 2 + 3 + 4 + 5 = 15")
 function sum(n: number): number {
+    if (n < 0) throw new Error("負の数は許可されていません。0以上の数値を入力してください。");
     if (n <= 0) return 0;
     return n + sum(n - 1);
 }
 console.log(sum(5));
 console.log(sum(1));
 console.log(sum(0));
-console.log(sum(-3));
+try {
+    console.log(sum(-3));
+} catch (error) {
+    if (error instanceof Error) {
+        console.error(`エラー: ${error.message}`);
+    } else {
+        console.error("予期せぬエラー", error);
+    }
+}
 
 
 console.log("与えられた数値を引数として、その数値の階乗 (factorial) を計算する再帰関数を作成してください。")
